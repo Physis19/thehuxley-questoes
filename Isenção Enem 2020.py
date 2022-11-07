@@ -5,8 +5,16 @@ tipo_escola = input()
 renda_pessoal = float(input())
 isencao_enem2018 = input()
 
-if situacao_ensinomedio != 'CLD' and situacao_ensinomedio != 'CVC' and situacao_ensinomedio != 'CSC' and situacao_ensinomedio != 'NCC':
+if isencao_enem2018 =='s':
+    justificou = input()
+    if justificou =='n':
+        print('Infelizmente voce nao tem direito a isencao')
+    if justificou =='s':
+        print('Voce terah direito a isencao')
+
+elif situacao_ensinomedio != 'CLD' and situacao_ensinomedio != 'CVC' and situacao_ensinomedio != 'CSC' and situacao_ensinomedio != 'NCC':
     print('Informacao sobre ensino medio invalida')
+
 #1 caso escola publica
 elif situacao_ensinomedio == 'CVC' and tipo_escola == 'PUB':
     print('Voce terah direito a isencao')
